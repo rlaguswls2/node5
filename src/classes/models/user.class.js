@@ -1,3 +1,5 @@
+import { createPingPacket } from '../../utils/notification/game.notification.js';
+
 class User {
   constructor(socket, id, playerId, latency, coords) {
     this.id = id;
