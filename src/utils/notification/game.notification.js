@@ -24,7 +24,7 @@ export const createLocationPacket = (users) => {
 
 export const createPingPacket = (timestamp) => {
   const protoMessage = getProtoMessages();
-  const ping = protoMessage.common.Ping;
+  const location = protoMessage.common.Ping;
 
   const payload = { timestamp };
   const message = location.create(payload);
